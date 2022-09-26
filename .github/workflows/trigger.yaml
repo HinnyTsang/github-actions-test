@@ -11,5 +11,8 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v3
-      - run: |
+
+      - name: Print Message
+        run: |
           echo Triggered
+
