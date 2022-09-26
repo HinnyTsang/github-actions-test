@@ -4,6 +4,8 @@ on:
     workflows: [Base Job]
     types:
       - completed
+    branches:
+      - Test
 jobs:
   on-success:
     name: Test
