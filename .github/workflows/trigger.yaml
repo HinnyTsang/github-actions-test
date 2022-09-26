@@ -5,7 +5,7 @@ on:
     types:
       - completed
     branches:
-      - Test
+      - main
 jobs:
   on-success:
     name: Test
