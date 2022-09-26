@@ -1,0 +1,15 @@
+name: Triggered Job
+on:
+  workflow_run:
+    workflows: [Base Job]
+    types:
+      - completed
+jobs:
+  on-success:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+      - run: |
+          echo Triggered

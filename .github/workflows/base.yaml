@@ -1,0 +1,12 @@
+name: Base Job
+on:
+  push:
+jobs:
+  on-success:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+        run: |
+          echo Base case running
