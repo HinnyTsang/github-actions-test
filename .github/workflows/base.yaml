@@ -14,4 +14,4 @@ jobs:
           Test: 1000
         run: |
           echo Base case running
-          ./test.sh
+          make
