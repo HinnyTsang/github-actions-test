@@ -8,8 +8,10 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v3
-      
+
       - name: Print Message
+        env:
+          - Test: 1000
         run: |
           echo Base case running
-
+          ./test.sh
