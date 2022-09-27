@@ -11,7 +11,7 @@ jobs:
 
       - name: Print Message
         env:
-          - Test: 1000
+          Test: 1000
         run: |
           echo Base case running
           ./test.sh
